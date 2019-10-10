@@ -1,0 +1,9 @@
+<h3>Items</h3>
+
+<div @inOut (@inOut.done)="done($event)" *ngFor="let i of items">
+  {{i}}
+</div>
+
+<button (click)="clearItems()">Remove One</button>
+
+<pre>{{elementesRemoved}}</pre>
