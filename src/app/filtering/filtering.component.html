@@ -1,0 +1,7 @@
+<div>
+  <input type="text" [formControl]="queryControl">
+</div>
+
+<div [@filterAnimation]="totalItems" class="results" *ngIf="results$ | async as results">
+  <div *ngFor="let item of results">{{item}}</div>
+</div>
